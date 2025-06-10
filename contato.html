@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Bremac Distribuidora LTDA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contato-container {
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contato-info, .contato-form {
+      flex: 1 1 400px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      color: #222;
+    }
+
+    h2 {
+      color: #e60000;
+      margin-bottom: 10px;
+    }
+
+    .contato-info p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .contato-info a {
+      color: #e60000;
+      text-decoration: none;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    button {
+      background-color: #e60000;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 768px) {
+      .contato-container {
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Entrar em contato!</h1>
+
+  <div class="contato-container">
+    <!-- Informações de contato -->
+    <div class="contato-info">
+      <h2>Bremac Distribuidora LTDA</h2>
+      <p>📍 Rua Mtras Pias Filippini, 3277</p>
+      <p>📌  Parque Monteiro Soares</p>
+      <p>📮 São Paulo - SP, 02736-010</p>
+      <p>📞 <a href="tel:+551139960600"> (11) 98729-5912 </a></p>
+      <p>📧 <a href=" breno_moelas@hotmail.com"> breno_moelas@hotmail.com</a></p>
+      <p>🕒 Atendimento:<br>Seg - Sex: 10h às 20h<br>Sáb e Dom: Fechado</p>
+    </div>
+
+    <!-- Formulário de contato -->
+    <div class="contato-form">
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Digite seu nome" required>
+        <input type="email" name="email" placeholder="Digite seu e-mail" required>
+        <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

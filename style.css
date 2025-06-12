@@ -1,291 +1,252 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distribuidora de beibdas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+     <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17142880685"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17142880685');
+</script>
+<!-- Event snippet for Visualização de página conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17142880685/bZipCICDytEaEK2zru4_',
+      'event_callback': callback
+  });
+  return false;
 }
+</script>
+<header class="fixed top-0 w-full bg-blue-600 text-white flex justify-between items-center px-4 py-4 shadow z-10">
+  <!-- Logo -->
+  <div class="text-xl font-bold">DistribuidoraAM-BV</div>
 
-html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
+  <!-- Menu como botões -->
+<nav class="space-x-2">
+  <a href="index.html" class="text-white border border-white px-2.5 py-1.8 text-sm rounded hover:bg-white hover:text-blue-700 font-medium transition">
+    Home
+  </a>
+  <a href="https://www.ze.delivery" target="_blank" class="text-white border border-white px-2.5 py-1.8 text-sm rounded hover:bg-white hover:text-blue-700 font-medium transition">
+    Comprar no Zé
+  </a>
+</nav>
 
-/* Menu no topo direito */
+</header>
 
+<!-- Bloco com fundo amarelo claro 20% -->
+<div class="bg-yellow-500/20 py-10">
 
-.menu button {
-  padding: 10px 16px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
+  <!-- Seção Quem somos -->
+  <section class="max-w-7xl mx-auto px-5 text-center md:text-left space-y-6">
+    <h2 class="text-2xl font-semibold text-blue-600 text-center"></h2>
+    <div class="w-full flex justify-center items-center">
+      <img 
+        src="images/carro.png" 
+        alt="Imagem Atendimento" 
+        class="rounded-xl shadow-md max-w-md max-h-100 object-cover pt-1 transform transition duration-300 ease-in-out hover:scale-105"
+      >
+    </div>
+  </section>
 
-.menu button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: black;
-}
+  <!-- Botões de ações -->
+  <section class="w-[85%] mx-auto space-y-5 mt-10 mb-16 text-center pt-1">
+    <a href="https://wa.me/5511997980005?text=Olá,%20quero%20falar%20com%20um%20consultor" target="_blank" class="block">
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
+        Falar com especialista
+      </button>
+    </a>
+    <a href="https://wa.me/5511997980005?text=Olá,%20quero%20falar%20com%20um%20consultor" class="block">
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
+        Fazer cadastro Ambev
+      </button>
+    </a>
+    <a href="https://wa.me/5511997980005?text=Olá,%20quero%20falar%20com%20um%20consultor" class="block">
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
+        Solicitar comodato
+      </button>
+    </a>
+    <a href="https://wa.me/5511997980005?text=Olá,%20quero%20falar%20com%20um%20consultor" target="_blank" class="block">
+      <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg">
+        Solicitar catálogo de produtos
+      </button>
+    </a>
+  </section>
 
-/* Imagem de fundo */
-.background {
-  background-image: url('imagen/fu.jpg'); /* Substitua pelo caminho real */
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 60px 30px;
-}
+</div>
 
-/* Conteúdo central */
-.conteudo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  gap: 40px;
-  flex-wrap: wrap;
-  color: white;
-}
+  <!-- Seção Kit Comodato -->
+ 
+  <section class="pt-9 max-w-7xl mx-auto px-1 text-center md:text-left space-y-4">
+    <h2 class="text-2xl font-bold text-center text-blue-600">Saiba o que é necessário para solicitar Kit Comodato</h2>
+    <p class="text-gray-700 text-justify">
+      Oferecemos o Kit Comodato, uma solução estratégica com expositoras, freezers e conjuntos de mesa e cadeira, 
+      ideal para otimizar a apresentação e o armazenamento de bebidas. Pensado para atender desde pequenos comerciantes 
+      até grandes estabelecimentos, garante praticidade e eficiência no ponto de venda.
+    </p>
+  </section>
 
-/* Texto à esquerda */
-.texto {
-  flex: 1;
-  min-width: 280px;
-}
+<!-- Carrossel visível apenas no mobile -->
+<div class="swiper my-5 w-full max-w-xs mx-auto rounded-lg overflow-hidden block md:hidden relative">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <img src="images/freezer1.PNG"
+           class="w-full h-98 object-cover rounded-md"
+           alt="Slide 1">
+    </div>
 
-.texto h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <img src="images/mesa1.PNG"
+           class="w-full h-98 object-cover rounded-md"
+           alt="Slide 2">
+    </div>
 
-.texto p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <img src="images/freeze4.PNG"
+           class="w-full h-98 object-cover rounded-md"
+           alt="Slide 3">
+    </div>
+  </div>
 
-/* Imagem à direita */
-.imagem-lateral {
-  flex: 1;
-  min-width: 280px;
-  text-align: center;
-}
-
-.imagem-lateral img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  height: auto;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-  .conteudo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu {
-    top: 10px;
-    right: 10px;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .menu button {
-    font-size: 13px;
-    padding: 8px 12px;
-  }
-
-  .texto h1 {
-    font-size: 2rem;
-  }
-
-  .texto p {
-    font-size: 1rem;
-  }
-}
-.oque-fazemos {
-  background-color: white;
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
-}
-
-.oque-fazemos h2 {
-  font-size: 2rem;
-  color: #222;
-  margin-bottom: 20px;
-  border-left: 5px solid #f44336;
-  padding-left: 10px;
-}
-
-.oque-fazemos ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.oque-fazemos li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #444;
-}
-
-.oque-fazemos li::before {
-  content: "✔️";
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.porque-ingressoai {
-  background: linear-gradient(135deg, #111, #333);
-  color: white;
-  padding: 40px 20px;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-}
-
-.porque-ingressoai h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #f44336;
-}
-
-.beneficios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #222;
-  border-radius: 12px;
-  padding: 30px 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
-}
-
-.icone {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 15px;
-}
-
-.card p {
-  font-size: 1.1rem;
-  color: #ddd;
-}
-
-.info-empresa {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  padding: 60px 20px;
-  background-color: #f5f5f5;
-  font-family: Arial, sans-serif;
-}
-
-.container-info {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  flex: 1 1 400px;
-  max-width: 500px;
-}
-
-.container-info h2 {
-  font-size: 1.5rem;
-  color: #f44336;
-  margin-bottom: 20px;
-}
-
-.container-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.container-info li {
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.container-info a {
-  color: #3366cc;
-  text-decoration: none;
-}
-
-.container-info a:hover {
-  text-decoration: underline;
-}
+  <!-- Paginação posicionada corretamente -->
+  <div class="swiper-pagination mt-3 flex justify-center"></div>
+</div>
 
 
-.rodape {
-  margin-top: 60px;
-  background: linear-gradient(to right, #000000, #1a1a1a);
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-}
+ 
+<section class="fale-com-alice">
+  <div class="conteudo">
+    <div class="texto">
+      <h2>Fale com nosso Time!</h2>
+      <p>Tire suas dúvidas.</p>
+      <button class="btn-chat">Iniciar chat</button>
+      <a href="https://wa.me/5511997980005" target="_blank" class="btn-whatsapp">WhatsApp</a>
+    </div>
+    <img src="images/avatar1.png" alt="Alice" class="avatar">
+  </div>
+</section>
+  <!-- Conteúdo principal com imagem e botões -->
+  <main class="pb-10 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-10">
 
-.conteudo-rodape p {
-  margin: 8px 0;
-  font-size: 1rem;
-  opacity: 0.85;
-}
+  <!-- Seção Kit Comodato -->
+  <section class="pt-1 max-w-7xl mx-auto px-4 text-center md:text-left">
+  <h2 class="text-2xl font-bold py-3 text-blue-600 pt-1">Nossos Produtos</h2>
+  <p class="text-gray-700 text-base text-justify">
+    Na nossa empresa, disponibilizamos um portfólio variado, desenvolvido para suprir as mais diversas preferências e demandas dos nossos clientes. Atuamos com as principais marcas do mercado, assegurando qualidade e alto padrão em cada item. Conheça nossas principais categorias:
+  </p>
+</section>
 
-.politicas {
-  margin-top: 15px;
-}
+<!-- Carrossel de imagens (somente mobile) -->
+<div class="swiper my-4 w-full max-w-xs mx-auto rounded-lg overflow-hidden block md:hidden">
+  <div class="swiper-wrapper">
+    
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <img src="images/coro.jpg" class="w-full h-94 object-cover rounded-md" alt="Slide 1">
+    </div>
 
-.politicas a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 8px;
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <img src="images/spat.jpg" class="w-full h-94 object-cover rounded-md" alt="Slide 2">
+    </div>
 
-.politicas a:hover {
-  text-decoration: underline;
-  opacity: 1;
-}
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <img src="images/brahma.jpg" class="w-full h-94 object-cover rounded-md" alt="Slide 3">
+    </div>
 
-.politicas span {
-  color: #999;
-}
-.menu a {
-  background-color: #1d4ed8;
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 0.375rem;
-  font-size: 1rem;
-  display: inline-block;
-}
+    <!-- Slide 4 -->
+    <div class="swiper-slide">
+      <img src="images/budi.jpg" class="w-full h-94 object-cover rounded-md" alt="Slide 4">
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="swiper-slide">
+      <img src="images/refri.png" class="w-full h-94 object-cover rounded-md" alt="Slide 5">
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="swiper-slide">
+      <img src="images/betss.png" class="w-full h-94 object-cover rounded-md" alt="Slide 6">
+    </div>
+
+  </div>
+
+  <!-- Paginação -->
+  <div class="swiper-pagination mt-2 flex justify-center"></div>
+</div>
+ 
+
+  </main>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511997980005" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A12.07 12.07 0 0012 0a12 12 0 00-10.6 17.75L0 24l6.37-1.66A12 12 0 1012 0a12.07 12.07 0 008.52 3.48zM12 22a10 10 0 01-5.28-1.48l-.38-.23-3.77 1 1-3.65-.25-.37A9.93 9.93 0 1122 12a9.93 9.93 0 01-10 10zm5.13-7.84l-1.42-.41a1.05 1.05 0 00-1 .27l-.44.45a8.46 8.46 0 01-3.83-3.83l.45-.44a1.05 1.05 0 00.27-1l-.41-1.42a1.05 1.05 0 00-1-.73h-.68A1.05 1.05 0 008 8.74a6.72 6.72 0 006.72 6.72 1.05 1.05 0 001.05-1.05v-.68a1.05 1.05 0 00-.73-1z"/>
+    </svg>
+  </a>
+    <div class="footer-bloco ">
+      <img src="images/site seguro.png" alt="Site Seguro" class="img-footer">
+    </div>
+  </div>
+   
+ 
+
+  <!-- Rodapé com Fundo Azul -->
+  <footer class="rodape">
+  <p>
+  <a href="Politica-de-Privacidade.html" target="_blank">
+    Política de Privacidade
+  </a><br>
+</p>
+    © 2025 Distribuidora de Bebidas. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    const images = document.querySelectorAll('.banner-container img');
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 3000); // troca a cada 3 segundos
+</script>
+
+</body>
+</html>

@@ -2,117 +2,99 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contato - Bremac Distribuidora LTDA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee?auto=format&fit=crop&w=1350&q=80');
-      background-size: cover;
-      background-position: center;
-      margin: 0;
-      padding: 0;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atendimento Ambev</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
-    .contato-container {
-      background-color: #ffffff;
-      max-width: 1000px;
-      margin: 50px auto;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .contato-info, .contato-form {
-      flex: 1 1 400px;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 30px;
-      color: #222;
-    }
-
-    h2 {
-      color: #e60000;
-      margin-bottom: 10px;
-    }
-
-    .contato-info p {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    .contato-info a {
-      color: #e60000;
-      text-decoration: none;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    form textarea {
-      height: 100px;
-      resize: none;
-    }
-
-    button {
-      background-color: #e60000;
-      color: #fff;
-      padding: 12px 20px;
-      border: none;
-      font-size: 16px;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #cc0000;
-    }
-
-    @media (max-width: 768px) {
-      .contato-container {
-        flex-direction: column;
-        padding: 20px;
-      }
-    }
-  </style>
 </head>
-<body>
+<body class="bg-amber-50 text-gray-800">
 
-  <h1>Entrar em contato!</h1>
+  <!-- Cabeçalho fixo -->
+  <header class="fixed top-0 w-full bg-blue-600 shadow-md z-10">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="images/logo1.png" alt="Logo Ambev" class="h-7">
+      </div>
+      <nav class="space-x-1">
+        <a href="index.html" class="text-white hover:text-gray-200 font-semibold">Home</a>
+        <a href="contato.html" class="text-white hover:text-gray-200 font-semibold">Contato</a>
+        <a href="https://www.ze.delivery" class="text-white hover:text-gray-200 font-semibold">Comprar no Zé</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="contato-container">
-    <!-- Informações de contato -->
-    <div class="contato-info">
-      <h2>Bremac Distribuidora LTDA</h2>
-      <p>📍 Rua Mtras Pias Filippini, 3277</p>
-      <p>📌  Parque Monteiro Soares</p>
-      <p>📮 São Paulo - SP, 02736-010</p>
-      <p>📞 <a href="tel:+551139960600"> (11) 98729-5912 </a></p>
-      <p>📧 <a href=" breno_moelas@hotmail.com"> breno_moelas@hotmail.com</a></p>
-      <p>🕒 Atendimento:<br>Seg - Sex: 10h às 20h<br>Sáb e Dom: Fechado</p>
+  <!-- Banner rotativo -->
+ 
+    <!-- Texto sobreposto -->
+    <div class="banner-overlay">
+      <div class="text-center text-white px-1">
+        <h2 class="text-3xl md:text-4xl font-bold">CONTATO!</h2>
+        <p class="mt-2 text-lg max-w-2xl mx-auto">
+          Nossa localização é pensada para oferecer mais comodidade a você, com fácil acesso, produtos originais e preços justos que cabem no seu bolso.
+        </p>
+      </div>
+    </div>
+  </section>
+ <section class="max-w-4xl mx-auto my-12 px-4">
+  <h2 class="text-3xl font-bold text-blue-800 mb-6">
+   
+  </h2>
+  
+  <section id="contato" class="bg-white py-4 px-4">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texto da esquerda -->
+    <div>
+      <h2 class="text-4xl font-bold text-blue-800 mb-4">Contato Rápido</h2>
+      <p class="text-gray-600 text-justify">
+        Entre em contato conosco para dúvidas sobre nossos produtos originais e preços competitivos.
+        Estamos aqui para ajudar!
+      </p>
     </div>
 
-    <!-- Formulário de contato -->
-    <div class="contato-form">
-      <form action="#" method="post">
-        <input type="text" name="name" placeholder="Digite seu nome" required>
-        <input type="email" name="email" placeholder="Digite seu e-mail" required>
-        <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
-        <button type="submit">ENVIAR</button>
-      </form>
-    </div>
+    <!-- Formulário -->
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Seu nome completo</label>
+        <input type="text" placeholder="Digite seu nome aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Seu e-mail*</label>
+        <input type="email" placeholder="Digite seu e-mail aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Sua mensagem*</label>
+        <textarea rows="4" placeholder="Escreva sua mensagem aqui" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-800 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-300">
+        Enviar mensagem
+      </button>
+    </form>
   </div>
+ </section>
+ <footer class="rodape">
+    <p>Política de Privacidade<br>
+    © 2025 Distribuidora de Bebidas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    let index = 0;
+    const banners = [document.getElementById('banner1'), document.getElementById('banner2')];
+
+    setInterval(() => {
+      banners[index].style.opacity = '0';
+      index = (index + 1) % banners.length;
+      banners[index].style.opacity = '1';
+    }, 5000);
+  </script>
 
 </body>
 </html>
